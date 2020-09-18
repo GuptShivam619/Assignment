@@ -1,27 +1,90 @@
+<!DOCTYPE html>
 <html>
-<head>Use of Class And Id in HTML
-.class1
-{
-   color: red;
-   
+<head>
+<style>
+.Div1 {
+  border: 0.5px outset Black;
+  background-color: skyblue;
+  
 }
-#ID1
-{
-   color: blue;
+.Div2 {
+  border: 0.5px outset black;
+  background-color: pink;
+  
 }
-#ID2
-{
-   color: green;
+.Div3{
+   border: 0.5px outset Black;
+   background-color: skyblue;
 }
+</style>
+<title>Registration Form</title>
 </head>
 <body>
+<h2><center>Registration Form</center></h2>
+<form>
+<div class="Div1">
+<h3>Basic Details</h3>
 <table>
-<tr>
-<div class="class1"><td>Class 10th</td></div><td>JNV Jaunpur</td><td>9.4 CGPA</td>
-</tr>
-<tr>
-<td id="ID1">Class 12th</td><td id="ID2">JNV Jaunpur</td><td>86.6%</td>
-</tr>
+<tr><td>Form Number</td><td><input type="text"></td></tr>
+<tr><td>Name</td><td><input type="text"></td></tr>
+<tr><td>Roll Number</td><td><input type="Number"></td></tr>
+<tr><td>Gender</td><td>Male<input type="radio" value="Male" name="Gender">Female<input type="radio" value="Female" name="Gender"></td></tr>
+<tr><td>Date Of Birth</td><td><input type="date"></td></tr>
+<tr><td>Pwd</td><td>YES<input type="radio" value="YES" name="Pwd">NO<input type="radio" value="NO" name="Pwd"></td></tr>
+<tr><td>Category</td><td><select value=" ">
+<option value="GEN">GEN</option>
+<option value="EWS">EWS</option>
+<option value="OBC-NCL">OBC-NCL</option>
+<option value="SC">SC</option>
+<option value="ST">ST</option></select></td></tr>
+<tr><td>Address</td></tr>
 </table>
+<tr><td><textarea rows="4" cols="50" maxlength="1000"></textarea></td></tr>
+<table>
+<tr><td>Pin Code</td><td><input type="Number"></td></tr>
+<tr><td>Contact Number 1</td><td><input type="Number"></td></tr>
+<tr><td>Contact Number 2</td><td><input type="Number"></td></tr>
+<tr><td>Student Email id</td><td><input type="text"></td></tr>
+</table>
+</div>
+<div class="Div2">
+<h3>Academic Details</h3>
+<table>
+<tr><td>Course</td><td><select value=" ">
+<option value="BTech">BTech</option>
+<option value="MTech">MTech</option>
+<option value="PHD">PHD</option>
+<option value="Integrated MSc">Integrated MSc</option>
+<option value="MPhil">MPhil</option></select>
+</td></tr>
+<tr><td>Branch</td><td><input type="text"></td></tr>
+<tr><td>Semester</td><td><select value=" ">
+<option value="1st">1st</option>
+<option value="3rd">3rd</option>
+<option value="5th">5th</option>
+<option value="9th">7th</option>
+<option value="9th">9th</option></select>
+</td></tr>
+<tr><td>All India Rank</td><td><input type="Number"></td><td>(2020 JEE MAINS/GATE)</tr>
+<tr><td>Category Rank</td><td><input type="Number"></td><td>(2020 JEE MAINS/GATE)</tr>
+<tr><td>CGPA</td><td><input type="Number"></td></tr>
+<tr><td>Backlog</td><td>YES<input type="radio" value="YES" name="Backlog">NO<input type="radio" value="NO" name="Backlog"></td></tr>
+<tr><td>Hostel Accommodation</td><td>YES<input type="radio" value="YES" name="Hostel Accommodation">NO<input type="radio" value="NO" name="Hostel Accommodation">(IF ANY)</td></tr>
+<tr><td>Name Of Hostel</td><td><input type="text"></td></tr>
+<tr><td>Room No.</td><td><input type="Number"></td></tr>
+</table>
+</div>
+<div class="Div3">
+<h3> Account Details for Refunding Process </h3>
+<table>
+<tr><td>Account Holder Name</td><td><input type="text"> As Per Bank Passbook</td></tr>
+<tr><td>Account Number</td><td><input type="Number"></td></tr>
+<tr><td>IFSC Code</td><td><input type="Text"></td></tr>
+<tr><td>Bank Name</td><td><input type="Text"></td></tr>
+<tr><td>Bank Branch</td><td><input type="Text"></td></tr>
+</table>
+</div><br>
+<td><input type="Submit" value="Submit"</td>
+</form>
 </body>
 </html>
